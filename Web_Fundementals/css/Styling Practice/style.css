@@ -1,0 +1,29 @@
+* {
+    font-family: cursive;
+    padding: 0px;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+span {
+    color: rgb(0,255,255);
+}
+
+h2 {
+    background-color: #663399;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+h3 {
+    background-color: rgb(159,197,248);
+    color: rgb(37,25,84);
+    text-align: end;
+    text-decoration: underline;
+    padding: 10px;
+}
