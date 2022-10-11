@@ -1,0 +1,32 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+
+.searchButton button {
+    color: rgb(4, 156, 133);
+    border: 2px solid rgb(4, 156, 133);
+    border-radius: 40px;
+    width: 150px;
+    height: 30px;
+}
+
+.plusButton button {
+    background-color: rgb(0,209,178);
+    color: white;
+    font-size: 140%;
+    border: 2px solid rgb(0,209,178);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.createAccount button {
+    border: 3px solid black;
+    width: 200px;
+    height: 35px;
+    box-shadow: 3px 3px 0px black; 
+    background-color: blue;
+    color: white;
+    
+}
