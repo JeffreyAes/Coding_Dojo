@@ -26,7 +26,7 @@
     font-size: larger;
 }
 
-.header h1  {
+.header h1 {
     color: white;
 
 }
@@ -38,7 +38,7 @@
 
 
 .header button {
-    background-color: rgb(23,162,184);
+    background-color: rgb(23, 162, 184);
     border: none;
     color: white;
     text-align: center;
@@ -54,16 +54,17 @@
     width: 63%;
 }
 
-.bio-box{
+.bio-box {
     width: 57%;
     margin-right: 20px;
 }
 
 .theme {
-    background-color: rgb(23,162,184);
+    background-color: rgb(23, 162, 184);
     height: 100px;
 
 }
+
 .theme img {
     border-radius: 50%;
     margin-left: 30px;
@@ -74,12 +75,15 @@
     margin-top: 50px;
     margin-left: 30px;
 }
+
 .text2 {
     margin-top: 15px;
     margin-left: 30px;
 }
 
-h1 , h3 , a {
+h1,
+h3,
+a {
     padding: 10px;
 }
 
@@ -88,7 +92,7 @@ h3 {
     align-items: center;
 }
 
-h3 > img {
+h3>img {
     margin-right: 10px;
 }
 
@@ -105,7 +109,7 @@ h3 > img {
 }
 
 .mini-theme {
-    background-color: rgb(51,51,51);
+    background-color: rgb(51, 51, 51);
     color: white;
     font-size: larger;
 }
@@ -126,7 +130,7 @@ span {
     margin-bottom: 20px;
 }
 
-.check1 img  {
+.check1 img {
     width: 35px;
 }
 
@@ -135,7 +139,7 @@ span {
 }
 
 
-.request-box  {
+.request-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
