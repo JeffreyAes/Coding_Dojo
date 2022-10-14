@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ==========NAV BAR========= -->
+    <div class="nav">
+        <ul class="flex list_dec">
+            <li>Dojonary</li>
+            <li><input class="bar" type="text" placeholder="search"></li>
+            <button class="box_shadow login" onclick="logOut(this)">login</button>
+        </ul>
+    </div>
+    <!-- ==========MAIN CONTENT======== -->
+    <div class="main-box">
+        <div class="def_box">
+            <div class="content flex">
+                <ul class="text_marg flex list_dec">
+                    <li class="bold_word"><em>ninja</em></li>
+                    <li>noun</li>
+                    <li>Plural: ninjas</li>
+                    <button class="like_button box_shadow" onclick="alert('ninja was liked')">13 likes</button>
+                </ul>
+                <div class="ninjitsu">
+                    <p>a practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjitsu</a></p>
+                </div>
+            </div>
+            <div class="content flex">
+                <ul class="text_marg flex list_dec">
+                    <li class="bold_word"><em>ninja</em></li>
+                    <li>noun</li>
+                    <li>Plural: ninjas</li>
+                    <button class="like_button box_shadow" onclick="alert('ninja was liked')">37 likes</button>
+                </ul>
+                <div class="ninjitsu">
+                    <p>A <a href="#">programmer</a> who breaks down
+                        problems with <a href="#">zen</a>-like focus</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="content text_marg other_box">
+                <p>dojonary is</p>
+                <p class="margin"> defined by <em>YOU</em></p>
+                <button class="def_button" onclick="remove(this)">Add Definition</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
