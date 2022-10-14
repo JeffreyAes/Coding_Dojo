@@ -1,0 +1,176 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.header {
+    background-color: #000000;
+    color: #AAAAAA;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.header ul {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    font-size: larger;
+}
+
+.header h1  {
+    color: white;
+
+}
+
+#my-prof {
+    color: white;
+}
+
+
+
+.header button {
+    background-color: rgb(23,162,184);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    padding: 3px 20px;
+    border: 2px solid black;
+}
+
+
+.content-box {
+    display: flex;
+    margin: 0 auto;
+    width: 63%;
+}
+
+.bio-box{
+    width: 57%;
+    margin-right: 20px;
+}
+
+.theme {
+    background-color: rgb(23,162,184);
+    height: 100px;
+
+}
+.theme img {
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.text {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.text2 {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+h1 , h3 , a {
+    padding: 10px;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+}
+
+h3 > img {
+    margin-right: 10px;
+}
+
+.box {
+    /* height: 350px;   */
+    /* ^remove this once items are added */
+    margin-bottom: 20px;
+    margin-top: 40px;
+    border: rgb(165, 164, 164) solid 4px;
+}
+
+.connection {
+    width: 35%;
+}
+
+.mini-theme {
+    background-color: rgb(51,51,51);
+    color: white;
+    font-size: larger;
+}
+
+span {
+    background-color: #CCCCCC;
+    border-radius: 50%;
+    padding: 10px 18px;
+    margin-right: 10px;
+    color: black;
+}
+
+.mini-theme h3 {
+    padding: 12px 35px;
+}
+
+#belt {
+    margin-bottom: 20px;
+}
+
+.check1 img  {
+    width: 35px;
+}
+
+.check2 img {
+    width: 35px;
+}
+
+
+.request-box  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gap-text {
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.gap-text img {
+    border-radius: 50%;
+}
+
+.icon {
+    width: 40px;
+}
+
+.connection-request {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 15px;
+}
+
+.friends h3 {
+    margin: 10px 15px;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.view {
+    margin-top: 15px;
+    border-top: 2px solid grey;
+    padding: 20px 10px;
+    font-size: 20pt;
+}
