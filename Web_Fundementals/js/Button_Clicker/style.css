@@ -68,7 +68,15 @@
     background-color: #2b78e4;
     font-size: 15pt;
     padding: 5px 30px;
+    margin-top: 15px;
     color: white;
+}
+
+.shadow {
+    /* box-shadow: 5px 5px 5px #999; */
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
 }
 
 /* =======MAIN CONTENT========= */
