@@ -1,0 +1,20 @@
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.notes {
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightyellow;
+    border: solid black 1px;
+}
+
+.shadow {
+    box-shadow: 5px 5px 5px #999;
+    position: relative;
+    bottom: 10px;
+    cursor: pointer;
+}
