@@ -129,13 +129,13 @@ span {
 .gap-text img {
     border-radius: 50%;
     width: 60px;
-    padding: 0px 10px 0px 0px;
+    padding: 0px 5px 0px 5px;
 }
 
 .accept img {
     border-radius: 50%;
     width: 50px;
-    padding: 0px 10px 0px 0px;
+    padding: 0px 5px 0px 5px;
 }
 
 .viewMore {
