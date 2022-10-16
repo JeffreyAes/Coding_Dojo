@@ -1,0 +1,144 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* =====GENERAL CLASSES====== */
+.flex {
+    display: flex;
+}
+
+.justify {
+        justify-content: space-between;
+}
+
+.align {
+    align-items: center;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 15pt;
+}
+
+.text {
+    margin: 10px 0px;
+    padding: 10px 20px;
+    font-size: 15pt;
+}
+
+
+/* ======NAV======= */
+.NAV {
+    background-color: black;
+    color: rgb(206,206,206);
+    height: 100px;
+    padding: 0px 150px;
+}
+
+
+.list li {
+    margin: 0px 20px;
+}
+
+.mine {
+    color: white;
+}
+
+.signOut {
+    background-color: rgb(23, 162, 184);
+    width: 125px;
+    height: 40px;
+    font-size: 15pt;
+    color: white;
+}
+
+.buttonHover {
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+}
+/* ===========MAIN CONTENT=========== */
+
+.mainContent {
+    margin: 40px 150px;
+    justify-content: space-around;
+}
+
+.bioBox {
+    width: 520px;
+}
+
+.connectBox {
+    width: 350px;
+}
+
+.Box {
+    margin-bottom: 30px;
+    border: 4px solid rgb(206,206,206);
+}
+
+.theme {
+    background-color: rgb(23,162,184);
+    height: 100px;
+}
+
+.pfp {
+    height: 80px;
+    border-radius: 50%;
+    margin: 53px 25px;
+    background-color: white;
+    border: solid 2px rgb(206,206,206); 
+    padding: 3px;
+
+}
+
+.bio {
+    margin-top: 35px;
+}
+
+.bio img {
+    height: 20px;
+    margin: 10px 0px 10px 5px;
+    padding-right: 10px;
+}
+/* =======EDUCATION BOX======== */
+
+.header {
+    background-color: rgb(51,51,51);
+    color: white;
+    padding: 25px 20px;
+    font-size: 15pt;
+}
+span {
+    border-radius: 50%;
+    background-color: rgb(206,206,206);
+    padding: 10px 20px;
+    color: black;
+}
+
+.grad {
+    margin: 10px 0px 15px 0px;
+    font-style: italic;
+    color: gray;
+}
+
+.gap-text img {
+    border-radius: 50%;
+    width: 60px;
+    padding: 0px 10px 0px 0px;
+}
+
+.accept img {
+    border-radius: 50%;
+    width: 50px;
+    padding: 0px 10px 0px 0px;
+}
+
+.viewMore {
+    border-top: solid 3px rgb(206,206,206);
+    padding: 20px 20px;
+}
