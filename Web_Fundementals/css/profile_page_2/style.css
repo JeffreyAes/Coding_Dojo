@@ -33,128 +33,128 @@
 
 /* ======NAV======= */
 .NAV {
-    background-color: rgb(54,57,63);
+    background-color: rgb(54, 57, 63);
     color: rgb(206, 206, 206);
     height: 100px;
     padding: 0px 150px;
-    }
+}
 
 
-    .list li {
-        margin: 0px 20px;
-    }
+.list li {
+    margin: 0px 20px;
+}
 
-    .mine {
-        color: white;
-    }
+.mine {
+    color: white;
+}
 
-    .signOut {
-        background-color: rgb(23, 162, 184);
-        width: 125px;
-        height: 40px;
-        font-size: 15pt;
-        color: white;
-    }
+.signOut {
+    background-color: rgb(23, 162, 184);
+    width: 125px;
+    height: 40px;
+    font-size: 15pt;
+    color: white;
+}
 
-    .buttonHover {
-        position: relative;
-        bottom: 5px;
-        cursor: pointer;
-    }
+.buttonHover {
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+}
 
-    /* ===========MAIN CONTENT=========== */
+/* ===========MAIN CONTENT=========== */
 
-    .webpage {
-        background-color: rgb(32,34,37);
-    }
+.webpage {
+    background-color: rgb(32, 34, 37);
+}
 
-    .mainContent {
-        margin: 0px 150px;
-        justify-content: space-around;
-        color: white;
-    }
+.mainContent {
+    margin: 0px 150px;
+    justify-content: space-around;
+    color: white;
+}
 
-    .bioBox {
-        width: 520px;
-        margin-left: 20px;
-    }
+.bioBox {
+    width: 520px;
+    margin-left: 20px;
+}
 
-    .connectBox {
-        width: 350px;
-    }
+.connectBox {
+    width: 350px;
+}
 
-    .Box {
-        margin-bottom: 30px;
-        margin-top: 40px;
-        border: 4px solid rgb(206, 206, 206);
-        background-color: rgb(75,68,59);
-    }
+.Box {
+    margin-bottom: 30px;
+    margin-top: 40px;
+    border: 4px solid rgb(206, 206, 206);
+    background-color: rgb(75, 68, 59);
+}
 
-    .theme {
-        background-color: rgb(19,162,183);
-        height: 100px;
-    }
+.theme {
+    background-color: rgb(19, 162, 183);
+    height: 100px;
+}
 
-    .pfp {
-        height: 100px;
-        border-radius: 50%;
-        margin: 40px 25px;
-        background-color: white;
-        border: solid 2px rgb(206, 206, 206);
-        padding: 3px;
+.pfp {
+    height: 100px;
+    border-radius: 50%;
+    margin: 40px 25px;
+    background-color: white;
+    border: solid 2px rgb(206, 206, 206);
+    padding: 2px;
 
-    }
+}
 
-    .bio {
-        margin-top: 45px;
-    }
+.bio {
+    margin-top: 45px;
+}
 
-    .bio img {
-        height: 25px;
-        margin: 15px 0px 15px 5px;
-        padding-right: 10px;
-    }
+.bio img {
+    height: 25px;
+    margin: 15px 0px 15px 5px;
+    padding-right: 10px;
+}
 
-    a {
-        color: rgb(43,123,224);
-    }
+a {
+    color: rgb(43, 123, 224);
+}
 
-    /* =======EDUCATION BOX======== */
+/* =======EDUCATION BOX======== */
 
-    .header {
-        background-color: rgb(94,91,100);
-        color: white;
-        padding: 25px 20px;
-        font-size: 15pt;
-    }
+.header {
+    background-color: rgb(94, 91, 100);
+    color: white;
+    padding: 25px 20px;
+    font-size: 15pt;
+}
 
-    span {
-        border-radius: 50%;
-        background-color: rgb(206, 206, 206);
-        padding: 10px 18px;
-        margin-right: 5px;
-        color: black;
-    }
+span {
+    border-radius: 50%;
+    background-color: rgb(206, 206, 206);
+    padding: 10px 18px;
+    margin-right: 5px;
+    color: black;
+}
 
-    .grad {
-        margin: 10px 0px 15px 0px;
-        font-style: italic;
-        color: gray;
-    }
+.grad {
+    margin: 10px 0px 15px 0px;
+    font-style: italic;
+    color: gray;
+}
 
-    .gap-text img {
-        border-radius: 50%;
-        width: 60px;
-        margin-right: 10px;
-    }
+.gap-text img {
+    border-radius: 50%;
+    width: 60px;
+    margin-right: 10px;
+}
 
-    .accept img {
-        border-radius: 50%;
-        width: 50px;
-        padding: 0px 5px 0px 5px;
-    }
+.accept img {
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 15px;
+}
 
-    .viewMore {
-        border-top: solid 3px rgb(206, 206, 206);
-        padding: 20px 20px;
-    }
+.viewMore {
+    border-top: solid 3px rgb(206, 206, 206);
+    padding: 20px 20px;
+}
