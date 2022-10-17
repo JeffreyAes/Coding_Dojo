@@ -70,7 +70,7 @@
 
     .mainContent {
         margin: 0px 150px;
-        justify-content: space-between;
+        justify-content: space-around;
         color: white;
     }
 
