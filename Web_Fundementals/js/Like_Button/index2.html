@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Like Button 2</title>
+</head>
+
+<body>
+    <div class="nav flex">
+        <h1 class="margin bigText">Network</h1>
+    </div>
+    <h1 class="center flex padding bigText">Your feed</h1>
+    <div class="webpage flex justify align">
+        <div class="col left padding">
+            <div class="user flex">
+                <img class="marginBottom" src="./images/user-circle.png" alt="user">
+                <h1 class="marginBottom"><a href="#">Add an avatar</a></h1>
+                <h1 class="bigText marginBottom">James Doe</h1>
+            </div>
+        </div>
+        <div class="col right">
+            <div class="thread padding">
+                <div class="poster flex justify marginBottom">
+                    <h1 class="bigText">Neil M</h1>
+                    <div class="likes flex">
+                        <h1 id="likes" class="margin bigText">9 like(s)</h1>
+                        <button onclick="addLike(this)" class="button margin bigText">Like</button>
+                    </div>
+                </div>
+                <div class="post marginBottom">
+                    <h1>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></h1>
+                </div>
+            </div>
+            <div class="thread padding">
+                <div class="poster flex justify marginBottom">
+                    <h1 class="bigText">Nichole K</h1>
+                    <div class="likes flex">
+                        <h1 id="likes2" class="margin bigText">12 like(s)</h1>
+                        <button onclick="addLike2(this)" class="button margin bigText">Like</button>
+                    </div>
+                </div>
+                <div class="post marginBottom">
+                    <h1>Just finished my <a href="#">next comic</a>, check it out.</h1>
+                </div>
+            </div>
+            <div class="thread padding">
+                <div class="poster flex justify marginBottom">
+                    <h1 class="bigText">Jim R</h1>
+                    <div class="likes flex">
+                        <h1 id="likes3" class="margin bigText">9 like(s)</h1>
+                        <button onclick="addLike3(this)" class="button margin bigText">Like</button>
+                    </div>
+                </div>
+                <div class="post marginBottom">
+                    <h1>I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+    <script src="./script2.js"></script>
+</body>
+
+</html>
