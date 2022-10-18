@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 .nav {
@@ -36,7 +37,7 @@
 }
 
 .bigText {
-    font-size: 40pt;
+    font-size: 30pt;
 }
 
 .padding {
