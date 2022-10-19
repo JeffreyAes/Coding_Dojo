@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <title>weather dojo</title>
+</head>
+
+<body>
+    <div class="nav color flex skyBlue">
+        <h1 class="xxl">DojoWeather</h1>
+        <div class="flex">
+            <h1 onclick="alert('loading weather report...')">Burbank</h1>
+            <h1 onclick="alert('loading weather report...')">Chicago</h1>
+            <h1 onclick="alert('loading weather report...')">Dallas</h1>
+        </div>
+    </div>
+    <div class="main margin marginTop">
+        <header class="flex borderBottom large">
+            <h1>San Jose</h1>
+            <div>
+                <label class="large" for="temp">Show temperature in</label>
+                <select onchange="celToFahr(this)" class="large" name="temp" id="temp">
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </div>
+        </header>
+        <main>
+            <div class="weatherBoxes flex  marginTop gap3">
+                <div class="col1 textCenter large grey padding">
+                    <h1>Today</h1>
+                    <img class="borderRadius" src="./assets/some_rain.png" alt="rain">
+                    <p>some rain</p>
+                    <div class="flex">
+                        <h1 class="colorRed"><span class="val">24</span>°</h1>
+                        <h1 class="colorBlue"><span class="val">18</span>°</h1>
+                    </div>
+                </div>
+                <div class="col1 textCenter large grey padding">
+                    <h1>Tomorrow</h1>
+                    <img class="borderRadius" src="./assets/some_sun.png" alt="sun">
+                    <p>some sun</p>
+                    <div class="flex">
+                        <h1 class="colorRed"><span class="val">27</span>°</h1>
+                        <h1 class="colorBlue"><span class="val">19</span>°</h1>
+                    </div>
+                </div>
+                <div class="col1 textCenter large grey padding">
+                    <h1>Friday</h1>
+                    <img class="borderRadius" src="./assets/some_clouds.png" alt="rain">
+                    <p>some clouds</p>
+                    <div class="flex">
+                        <h1 class="colorRed"><span class="val">21</span>°</h1>
+                        <h1 class="colorBlue"><span class="val">16</span>°</h1>
+                    </div>
+                </div>
+                <div class="col1 textCenter large grey padding">
+                    <h1>Saturday</h1>
+                    <img class="borderRadius" src="./assets/some_clouds.png" alt="rain">
+                    <p>some sun</p>
+                    <div class="flex">
+                        <h1 class="colorRed"><span class="val">26</span>°</h1>
+                        <h1 class="colorBlue"><span class="val">21</span>°</h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="cookie" class="COOKIE flex grey padding">
+            <img src="./assets/cookie.png" alt="cookie">
+            <div class="">
+                <h1>Stop! Cookie time</h1>
+                <h3>we use cookies (sadly not the edible kind) to personalize
+                    content and ads, to provide social media features and to
+                    analyse out traffic. <a href="#">Read more</a>
+                </h3>
+            </div>
+            <button onclick="removeCookie()" class="accept">I Accept</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
