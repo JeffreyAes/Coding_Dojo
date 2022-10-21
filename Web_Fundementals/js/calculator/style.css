@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    height: 600px;
+}
+
+.wrapper {
+    background-color: #222222;
+    width: 400px;
+    height: 550px;
+    text-align: center;
+    border-radius: 10%;
+    position: fixed;
+}
+
+#display {
+    text-align: end;
+    margin-right: 50px;
+}
+
+button {
+    padding: 10px;
+    margin: 10px 5px;
+    background-color: rgb(102,102,102);
+    border-radius: 50%;
+    width: 65px;
+    font-size: 30pt;
+    border: none;
+    cursor: pointer;
+}
+
+
+#display {
+    margin-top: 30px;
+    font-size: 45pt;
+}
+
+.operator {
+    background-color: #ff8c00;
+}
+
+#equals {
+    width: 320px;
+    border-radius: 40px;
+}
+
+.equals {
+    color: black;
+    background-color: #cccccc;
+}
+
+.lightenUp {
+    background-color:#eee;
+    color: #222222;
+}
