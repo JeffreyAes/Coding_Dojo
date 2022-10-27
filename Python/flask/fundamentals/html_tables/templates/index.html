@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>html table</title>
+</head>
+
+<body class="my_wapper">
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>
+                    first name
+                </th>
+                <th>last name</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>{{users.0['first_name']}}</td>
+            <td>{{users.0['last_name']}}</td>
+        </tr>
+        <tr>
+            <td>{{users.1['first_name']}}</td>
+            <td>{{users.1['last_name']}}</td>
+        </tr>
+        <tr>
+            <td>{{users.2['first_name']}}</td>
+            <td>{{users.2['last_name']}}</td>
+        </tr>
+    </table> -->
+<div class="my_wapper">
+
+    <table class="table table-dark table-bordered">
+        <thead>
+            <tr>
+                <th>
+                    first name
+                </th>
+                <th>
+                    last name
+                </th>
+                <th>full name</th>
+            </tr>
+            {% for i in users %}
+            <tr>
+                <td>{{i["first_name"]}}</td>
+                <td>{{i["last_name"]}}</td>
+                <td>{{i["first_name"]}} {{i["last_name"]}}</td>
+            </tr>
+            {% endfor %}
+        </thead>
+    </table>
+</div>
+</body>
+
+</html>
