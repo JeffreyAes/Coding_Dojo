@@ -10,6 +10,11 @@
 
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>html table</title>
+    <style>
+        table {
+            width: 500px;
+        }
+    </style>
 </head>
 
 <body class="my_wapper">
@@ -35,7 +40,7 @@
             <td>{{users.2['last_name']}}</td>
         </tr>
     </table> -->
-<div class="my_wapper">
+<div class="d-flex justify-content-center">
 
     <table class="table table-dark table-bordered">
         <thead>
