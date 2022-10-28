@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>html table</title>
     <style>
-        table {
-            width: 500px;
+        .my_table {
+            width: 800px;
         }
+        
     </style>
 </head>
 
@@ -40,7 +41,7 @@
             <td>{{users.2['last_name']}}</td>
         </tr>
     </table> -->
-    <table class="table table-dark table-bordered">
+    <table class="table table-dark table-bordered my_table">
         <thead>
             <tr>
                 <th>
