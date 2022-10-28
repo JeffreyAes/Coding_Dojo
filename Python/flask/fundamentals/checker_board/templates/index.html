@@ -11,18 +11,18 @@
             height: 50px;
         }
         .color1 {
-            background-color: red;
+            background-color: {{color1}}
         }
         .color2 {
-            background-color: black;
+            background-color: {{color2}}
         }
     </style>
 </head>
 <body>
     <table>
-        {% for i in range(7): %}
+        {% for i in range(num1): %}
         <tr>
-            {% for j in range(7) %}
+            {% for j in range(num2): %}
             <td class="color{{ (i+j)%2+1}}"></td>
             {% endfor %}
         </tr>
