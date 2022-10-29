@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<style>
+    form {
+        font-size: 20pt;
+        width: 500px;
+    }
+</style>
+    <title>dojo survey</title>
+</head>
+
+<body class="p-3 mb-2 bg-dark text-white d-flex justify-content-center">
+    <form class="text-center d-flex  flex-column mb-3 "  action="/process" method="post">
+        <label for=" text">Your name:</label>
+        <input type="text" name="name">
+        <label for="that">Dojo location:</label>
+        <select name="location">
+            <option>seattle</option>
+            <option>tacoma</option>
+            <option>yakama</option>
+            <option>redmond</option>
+        </select> 
+        <label for="meme">Favorite language:</label>
+        <select name="language" id="">
+            <option>python</option>
+            <option>java</option>
+            <option>c#</option>
+            <option>c++</option>
+        </select>
+        <h3>Comment (optional)</h3>
+        <textarea name="text_area" id="" cols="60" rows="5"></textarea>
+        <input class="bg-warning" type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

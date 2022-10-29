@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>submission complete :D</title>
+    <style>
+        .margin {
+            margin: 40px;
+        }
+
+        .margin_top {
+            margin-top: 20px;
+        }
+
+        .tabler {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white margin">
+    <div class="d-flex justify-content-center">
+        <div class="">
+
+            <h1 class="margin_top">Submitted info</h1>
+            <table class="table table-dark tabler margin_top">
+                <tr>
+                    <td>name: </td>
+                    <td>{{ session['name'] }}</td>
+                </tr>
+                <tr>
+                    <td>location:</td>
+                    <td>{{ session['location'] }}</td>
+                </tr>
+                <tr>
+                    <td>favorite language:</td>
+                    <td>{{ session['language'] }}</td>
+                </tr>
+            </table>
+            <p class="margin_top">{{ session['text_area'] }}</p>
+            <a class="btn btn-primary" href="/">back</a>
+        </div>
+    </div>
+</body>
+
+</html>
