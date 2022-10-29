@@ -15,9 +15,11 @@
     <h4 class="text-center">I'm thinking of a number between 1 and 100</h4>
     <h3 class="text-center">Take a guess!</h3>
     <p class="text-center">{{ session['answer'] }}</p>
-    <form class="d-flex justify-content-center" action="/response" method="post">
+                        <!-- inserts the feedback given the users guess -->
+    <form class="d-flex justify-content-center" action="/response" method="post"> 
+        <!-- ships the information to the redirect using the post method -->
         <input type="text" name="guess">
-        
+        <!-- the guess -->
     </form>
 </body>
 
