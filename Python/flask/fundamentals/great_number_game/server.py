@@ -19,6 +19,7 @@ def guess_number():
 # checks if guess is correct and redirects back with feedback
 @app.route('/response',  methods=['POST'])
 def check_guess():
+    session['count'] = 0
     session['guess'] = int(request.form['guess'])
     answer = ""
     if session['random'] < session['guess']:
@@ -29,7 +30,8 @@ def check_guess():
         answer = "cORRECT!"
         session['random'] = random.randint(1,100)
     session['answer'] = answer
-    
+    if session['guess'] != session['random']:
+        session['count'] +=0
     return redirect('/')
 
 
