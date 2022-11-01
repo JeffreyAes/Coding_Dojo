@@ -5,7 +5,10 @@ where language = "Slovene"
 ORDER BY percentage DESC
 
 -- query 2:
-
+SELECT countries.name AS countries, COUNT(*) AS cities FROM countries
+JOIN cities ON countries.id = cities.country_id
+GROUP BY countries.name, country_id
+ORDER BY COUNT(*) DESC
 --query 3:
 SELECT cities.name, population FROM cities
 WHERE country_id = 136 AND cities.population > 500000
