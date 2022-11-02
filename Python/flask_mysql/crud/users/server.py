@@ -4,12 +4,14 @@ from user import User
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route('/')
 def index():
+    return redirect('/users')
 
-    users = User.get_all()
-    print(users)
-    return render_template('read_all.html', users=users)
+
+@app.route('/users')
+def users():
+    return render_template("read_all.html", users=User.get_all())
 
 
 @app.route("/create_user")
@@ -20,7 +22,7 @@ def create_user():
 @app.route("/insert_user", methods=["POST"])
 def addUser():
     User.save(request.form)
-    return redirect('/')
+    return redirect('/users')
 
 
 if __name__ == "__main__":
