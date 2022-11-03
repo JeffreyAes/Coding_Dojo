@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>create user</title>
+    <title>edit user</title>
 </head>
-
 <body>
-    <div class="newuser">
-        <h1>Add a New User</h1>
-        <a href="/">Home</a>
-    </div>
-    <form action="/insert_user" method="post">
+    <h1>Edit user</h1>
+    <form action="/users/{{ this_user.id }}/update" method="post">
         <label for="fname">First Name:</label>
-        <input type="text" name="first_name">
+        <input type="text" name="first_name" value="{{this_user.first_name}}">
         <label for="lname">Last Name:</label>
-        <input type="text" name="last_name">
+        <input type="text" name="last_name" value="{{this_user.last_name}}">
         <label for="email">Email:</label>
-        <input type="text" name="email">
+        <input type="text" name="email" value="{{this_user.email}}">
         <button>create</button>
     </form>
     <a href="/users">home</a>
 </body>
-
 </html>
