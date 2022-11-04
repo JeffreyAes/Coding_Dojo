@@ -5,7 +5,7 @@ DATABASE = "default"
 class Default:
     def __init__(self, data):
         self.id = data['id']
-        self.id = ['name']
+        self.id = data['name']
         self.created_at = data['created_at']
         self.updated_at = data['updated_at']
 
