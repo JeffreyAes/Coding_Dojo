@@ -1,5 +1,5 @@
 from flask_app import app
-from flask_app.controllers import default_controllers
+from flask_app.controllers import user_controller
 # ...server.py
 
 

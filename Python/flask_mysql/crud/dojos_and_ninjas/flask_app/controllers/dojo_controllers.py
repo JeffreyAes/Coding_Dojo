@@ -3,6 +3,7 @@ from flask import render_template, redirect, request, session, flash
 from flask_app.models.dojo_models import Dojo
 
 
+
 @app.route('/')
 def index():
     return redirect('/dojos')
