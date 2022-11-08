@@ -1,6 +1,6 @@
 from flask import flash
 from flask_app.config.mysqlconnections import connectToMySQL
-from flask_app import DATABASE
+from flask_app import DATABASE  
 from flask_app.models import user_model
 
 
@@ -24,13 +24,14 @@ class Recipe:
         """
 
         return connectToMySQL(DATABASE).query_db(query, data)
-
+        #^inserting into the database
     @classmethod
     def get_all(cls):
         query = """
         SELECT * FROM recipes JOIN users ON recipes.user_id = users.id;
         """
         results = connectToMySQL(DATABASE).query_db(query)
+        #^selects the joined table of recipes and users
         all_recipes = []
         if results:
             for row in results:
@@ -45,7 +46,7 @@ class Recipe:
                 this_recipe.creator = this_user
                 all_recipes.append(this_recipe)
         return (all_recipes)
-
+        #^fills the recipe information in the joined table, and returns ALL of the recipes
     @classmethod
     def get_by_id(cls, data):
         query = """
@@ -66,7 +67,7 @@ class Recipe:
             this_recipe.creator = this_user
             return this_recipe
         return False
-
+        #^grabs a specified user, fills them with their recipes, and returns the users recieps
     @classmethod
     def update(cls,data):
         query = """
@@ -75,14 +76,14 @@ class Recipe:
         WHERE id = %(id)s;
         """
         return connectToMySQL(DATABASE).query_db(query,data)
-
+        #updates specific recipes
     @classmethod
     def delete(cls,data):
         query = """
         DELETE FROM recipes WHERE id = %(id)s;
         """
         return connectToMySQL(DATABASE).query_db(query,data)
-
+        #deletes specific recipes
 
     @staticmethod
     def validator(form_data):
@@ -103,3 +104,4 @@ class Recipe:
             flash("Cook time is REQUIRED!")
             is_valid = False
         return is_valid
+        #checks if the recipe creation form is filled out.

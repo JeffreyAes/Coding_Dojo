@@ -21,7 +21,7 @@ class User:
         INSERT INTO users (first_name, last_name, email, password)
         VALUES (%(first_name)s, %(last_name)s, %(email)s, %(password)s);
         """
-
+        #create new user^
         return connectToMySQL(DATABASE).query_db(query, data)
 
     @classmethod
@@ -32,7 +32,7 @@ class User:
         results = connectToMySQL(DATABASE).query_db(query, data)
         if len(results) < 1:
             return False
-
+        #^selects user by their unique email. used to check if they're email is already registered/matches their other login info
         return cls(results[0])
 
     @classmethod
@@ -47,7 +47,7 @@ class User:
             for row in results:
                 recipe_data = {
                     **row,
-                    'id': row['recipes.id'],
+                    'id': row['recipes.id'],    #careful with ambiguous keys
                     'created_at': row['recipes.created_at'],
                     'updated_at': row['recipes.updated_at']
                 }
@@ -55,6 +55,7 @@ class User:
                 recipe_list.append(this_recipe_instance)
             this_user.recipes = recipe_list
             return this_user
+            #returns all the recipes of a specific user
         return False
 
     @staticmethod

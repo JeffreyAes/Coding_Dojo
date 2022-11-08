@@ -14,6 +14,7 @@
     <div class="container mt-4">
         <div class="d-flex justify-content-between">
             <h1>Welcome {{logged_user.first_name}}</h1>
+            <!-- displays the name of the current session user -->
             <div class="mt-2">
                 <a class="btn btn-primary" href="/dashboard">Back to recipes</a>
                 <a class="btn btn-warning" href="/users/logout">Logout</a>
@@ -22,10 +23,12 @@
         <div class="d-flex justify-content-between">
             <h1>{{this_recipe.name}}</h1>
             <h4 class="mt-4">Posted by: {{this_recipe.creator.first_name}}</h4>
+                            <!-- creator is the keyword made in the model forloop which gives access to the recipes user -->
         </div>
         <div class="border border-dark">
             <p class="h4">Description:   {{this_recipe.description}}</p>
             <p class="h4">Under 30 minutes?    {% if this_recipe.under == 1%}True {% else%}False {%endif%}</p>
+                                                <!-- MORE CONDITIONAL RENDERING! -->
             <p class="h4">Instructions:   {{this_recipe.instruction}}</p>
             <p class="h4">Date Made:   {{this_recipe.date}}</p>
         </div>

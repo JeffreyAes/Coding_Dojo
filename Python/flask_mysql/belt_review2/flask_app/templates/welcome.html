@@ -49,6 +49,7 @@
                         <a href="/recipe/{{one_recipe.id}}/edit">Edit</a> |
                         <a class="link-danger" href="/recipe/{{one_recipe.id}}/delete">Delete</a>
                         {% endif %}
+                        <!-- renders only if the recipes poster is the same as the user thats logged in -->
                     </td>
                 </tr>
                 {% endfor %}

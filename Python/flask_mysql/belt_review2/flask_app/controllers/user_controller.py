@@ -61,3 +61,5 @@ def dash():
     logged_user = User.get_by_id(data)
     all_recipes = Recipe.get_all()
     return render_template('welcome.html', logged_user=logged_user, all_recipes=all_recipes)
+    #grabs the logged in users id (so we can display their name +other info if needed), and all the recipes to display 
+    #on the dashboard.
