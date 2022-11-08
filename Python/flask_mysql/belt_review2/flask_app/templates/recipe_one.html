@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Recipe Post</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between">
+            <h1>Welcome {{logged_user.first_name}}</h1>
+            <div class="mt-2">
+                <a class="btn btn-primary" href="/dashboard">Back to recipes</a>
+                <a class="btn btn-warning" href="/users/logout">Logout</a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <h1>{{this_recipe.name}}</h1>
+            <h4 class="mt-4">Posted by: {{this_recipe.creator.first_name}}</h4>
+        </div>
+        <div class="border border-dark">
+            <p class="h4">Description:   {{this_recipe.description}}</p>
+            <p class="h4">Under 30 minutes?    {% if this_recipe.under == 1%}True {% else%}False {%endif%}</p>
+            <p class="h4">Instructions:   {{this_recipe.instruction}}</p>
+            <p class="h4">Date Made:   {{this_recipe.date}}</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
