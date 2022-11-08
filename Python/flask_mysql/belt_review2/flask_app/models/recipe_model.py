@@ -53,18 +53,26 @@ class Recipe:
         SELECT * FROM recipes JOIN users ON recipes.user_id = users.id
         WHERE recipes.id = %(id)s;
         """
+        # joining the recipe(content) with the user assoiciated with it
+        #i don't want to display users without recipes, so i used an inner join (tho im not sure if it matters in this context)
         results = connectToMySQL(DATABASE).query_db(query, data)
         if results:
             this_recipe = cls(results[0])
+            #grabs the only result selected by recipe id
             row = results[0]
+            #making row = result so i can reuse code
             user_data = {
                 **row,
                 'id': row['users.id'],
                 'created_at': row['users.created_at'],
                 'updated_at': row['users.updated_at']
+                #specify ambiguous keys
             }
             this_user = user_model.User(user_data)
+            #puts user data in a variable
             this_recipe.creator = this_user
+            #gathers both the recipe, and user info from our join, and stores it in a variable
+            #this gives us access to the user associated with the recipe! :D
             return this_recipe
         return False
         #^grabs a specified user, fills them with their recipes, and returns the users recieps
