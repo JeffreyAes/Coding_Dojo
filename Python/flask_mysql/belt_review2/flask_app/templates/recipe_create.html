@@ -25,8 +25,8 @@
             {% for message in get_flashed_messages() %}
             <p class="text-danger">{{message}}</p>
             {%endfor%}
-            #sends the user a warning that their submission was invalid, and didn't submit.
-            #and tells them what is required
+            <!-- #sends the user a warning that their submission was invalid, and didn't submit.
+            #and tells them what is required -->
             <form action="/recipes/create" method="post">
                 <div class="d-flex justify-content-between">
                     <div class="">
@@ -42,9 +42,11 @@
                             <input type="date" name="date">
                             <p class="mt-5">Under 30 Minutes??</p>
                             <label for="yes">Yes</label>
-                            <input type="radio" name="under" value="1"> #true
+                            <input type="radio" name="under" value="1">
+                            <!-- #true -->
                             <label for="no">No</label>
-                            <input type="radio" name="under" value="0"> #false
+                            <input type="radio" name="under" value="0">
+                            <!-- #false -->
                             <button class="btn btn-primary mt-5">Submit</button>
                         </div>
                         
