@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>{{logged_user.first_name}}'s parties</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between">
+            <h1>{{logged_user.first_name}}'s parties</h1>
+            <div class="mt-2">
+                <a class="btn btn-primary" href="/dashboard">home</a>
+                <a class="btn btn-warning" href="/users/logout">Logout</a>
+            </div>
+        </div>
+        <table class="table table-secondary table-striped">
+            <thead>
+                <tr>
+                    <th>What</th>
+                    <th>Location</th>
+                    <th>Date</th>
+                    <th>All Ages</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for one_party in logged_user.parties%}
+                <tr>
+                    
+                    <td>{{one_party.what}}</td>
+                    <td>{{one_party.location}}</td>
+                    <td>{{one_party.date}}</td>
+                    <td>{%if one_party.all_ages == 1%}True {%else%}False {%endif%}</td>
+                    <td>
+                        <a href="/parties/{{one_party.id}}/show">View</a> |
+                        <a href="/parties/{{one_party.id}}/edit">Edit</a> |
+                        <a class="link-danger" href="/parties/{{one_party.id}}/delete">Delete</a>
+                    </td>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+        <a class="btn btn-primary" href="/parties/new">Plan a Party</a>
+    </div>
+</body>
+</html>

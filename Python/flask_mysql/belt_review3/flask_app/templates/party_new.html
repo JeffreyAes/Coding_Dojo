@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Add Party</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between">
+            <h1>Add a Party</h1>
+            <div class="">
+                <a class="btn btn-primary mt-2" href="/dashboard">Home</a>
+            </div>
+        </div>
+        {%for message in get_flashed_messages()%}
+        <h3 class="text-danger">{{message}}</h3>
+        {%endfor%}
+        <form action="/parties/create" method="post">
+            <div class="d-flex justify-content-between">
+                <div class="">
+                    <p>What:</p>
+                    <input type="text" name="what">
+                    <p>Where:</p>
+                    <input type="text" name="location">
+                    <p>Date:</p>
+                    <input type="date" name="date">
+                    <p>All Ages:</p>
+                    <label for="all_ages">True</label>
+                    <input type="radio" name="all_ages" value="1">
+                    <label for="all_ages">False</label>
+                    <input type="radio" name="all_ages" value="0">
+                </div>
+                <div class="">
+                    <p>Description:</p>
+                    <textarea name="description" cols="60" rows="9"></textarea>
+                </div>
+            </div>
+            <button class="btn btn-success">Add party</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
