@@ -1,0 +1,15 @@
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsTwo\bin\Debug\net7.0\FundamentalsTwo.exe
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsTwo\bin\Debug\net7.0\FundamentalsTwo.deps.json
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsTwo\bin\Debug\net7.0\FundamentalsTwo.runtimeconfig.json
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsTwo\bin\Debug\net7.0\FundamentalsTwo.dll
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsTwo\bin\Debug\net7.0\FundamentalsTwo.pdb
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsTwo\obj\Debug\net7.0\FundamentalsTwo.csproj.AssemblyReference.cache
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsTwo\obj\Debug\net7.0\FundamentalsTwo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsTwo\obj\Debug\net7.0\FundamentalsTwo.AssemblyInfoInputs.cache
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsTwo\obj\Debug\net7.0\FundamentalsTwo.AssemblyInfo.cs
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsTwo\obj\Debug\net7.0\FundamentalsTwo.csproj.CoreCompileInputs.cache
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsTwo\obj\Debug\net7.0\FundamentalsTwo.dll
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsTwo\obj\Debug\net7.0\refint\FundamentalsTwo.dll
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsTwo\obj\Debug\net7.0\FundamentalsTwo.pdb
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsTwo\obj\Debug\net7.0\FundamentalsTwo.genruntimeconfig.cache
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsTwo\obj\Debug\net7.0\ref\FundamentalsTwo.dll
