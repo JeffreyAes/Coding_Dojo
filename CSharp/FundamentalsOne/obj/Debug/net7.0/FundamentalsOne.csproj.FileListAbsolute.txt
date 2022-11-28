@@ -1,0 +1,15 @@
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsOne\bin\Debug\net7.0\FundamentalsOne.exe
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsOne\bin\Debug\net7.0\FundamentalsOne.deps.json
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsOne\bin\Debug\net7.0\FundamentalsOne.runtimeconfig.json
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsOne\bin\Debug\net7.0\FundamentalsOne.dll
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsOne\bin\Debug\net7.0\FundamentalsOne.pdb
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsOne\obj\Debug\net7.0\FundamentalsOne.csproj.AssemblyReference.cache
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsOne\obj\Debug\net7.0\FundamentalsOne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsOne\obj\Debug\net7.0\FundamentalsOne.AssemblyInfoInputs.cache
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsOne\obj\Debug\net7.0\FundamentalsOne.AssemblyInfo.cs
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsOne\obj\Debug\net7.0\FundamentalsOne.csproj.CoreCompileInputs.cache
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsOne\obj\Debug\net7.0\FundamentalsOne.dll
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsOne\obj\Debug\net7.0\refint\FundamentalsOne.dll
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsOne\obj\Debug\net7.0\FundamentalsOne.pdb
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsOne\obj\Debug\net7.0\FundamentalsOne.genruntimeconfig.cache
+C:\Users\jeff\Desktop\Coding_Dojo\CSharp\FundamentalsOne\obj\Debug\net7.0\ref\FundamentalsOne.dll
