@@ -14,10 +14,4 @@ class Enemy {
     }
 
 
-    public Attack RandomList(){
-        Random rand = new Random();
-        int RandomAttack = rand.Next(0,Attacks.Count);
-        return Attacks[RandomAttack];
-    }
-
 }
