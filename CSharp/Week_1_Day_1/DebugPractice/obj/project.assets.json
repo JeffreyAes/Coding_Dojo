@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jeff\\Desktop\\Coding_Dojo\\CSharp\\DebugPractice\\DebugPractice.csproj",
+      "projectUniqueName": "C:\\Users\\jeff\\Desktop\\Coding_Dojo\\CSharp\\Week_1_Day_1\\DebugPractice\\DebugPractice.csproj",
       "projectName": "DebugPractice",
-      "projectPath": "C:\\Users\\jeff\\Desktop\\Coding_Dojo\\CSharp\\DebugPractice\\DebugPractice.csproj",
+      "projectPath": "C:\\Users\\jeff\\Desktop\\Coding_Dojo\\CSharp\\Week_1_Day_1\\DebugPractice\\DebugPractice.csproj",
       "packagesPath": "C:\\Users\\jeff\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jeff\\Desktop\\Coding_Dojo\\CSharp\\DebugPractice\\obj\\",
+      "outputPath": "C:\\Users\\jeff\\Desktop\\Coding_Dojo\\CSharp\\Week_1_Day_1\\DebugPractice\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jeff\\AppData\\Roaming\\NuGet\\NuGet.Config",
