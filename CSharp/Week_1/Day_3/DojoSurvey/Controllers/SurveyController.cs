@@ -4,13 +4,13 @@ namespace DojoSurvey.Controllers;
 
 public class SurveyController : Controller
 {
-    [Route("")]
+    [HttpGet("")]
     public ViewResult Index()
     {
         return View("Index");
     }
 
-    [HttpPost("/process")]
+    [HttpPost("process")]
     public IActionResult process(string name, string location, string language, string comment)
     {
         if (name == null)
@@ -25,7 +25,7 @@ public class SurveyController : Controller
 
     }
 
-    [Route("/results")]
+    [HttpGet("results")]
     public ViewResult ShowResults(string name, string location, string language, string comment)
     {
         ViewBag.Name = name;
