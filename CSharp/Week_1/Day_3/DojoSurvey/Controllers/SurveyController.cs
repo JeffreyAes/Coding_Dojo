@@ -13,7 +13,15 @@ public class SurveyController : Controller
     [Route("/process")]
     public IActionResult process(string name, string location, string language, string comment)
     {
-    return RedirectToAction("ShowResults", new {name = name, location = location, language = language, comment = comment});
+        if (name == null)
+        {
+            return RedirectToAction("Index");
+        }
+        else
+        {
+
+        return RedirectToAction("ShowResults", new { name = name, location = location, language = language, comment = comment });
+        }
 
     }
 
