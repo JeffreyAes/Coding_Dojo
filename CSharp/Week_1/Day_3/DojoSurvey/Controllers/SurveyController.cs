@@ -10,7 +10,7 @@ public class SurveyController : Controller
         return View("Index");
     }
 
-    [Route("/process")]
+    [HttpPost("/process")]
     public IActionResult process(string name, string location, string language, string comment)
     {
         if (name == null)
