@@ -6,9 +6,9 @@ public class HelloController : Controller   // Remember inheritance?
 {
     // We will go over this in more detail on the next page    
     [Route("")] // We will go over this in more detail on the next page
-    public string Index()
+    public ViewResult Index()
     {
-        return "Hello World from HelloController!";
+        return View("Index");
     }
 
     [HttpGet("greet/{name}")]
