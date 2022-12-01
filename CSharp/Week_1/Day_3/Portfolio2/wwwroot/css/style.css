@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+header {
+    margin-top: 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+a {
+    font-size: larger;
+}
+
+.container {
+    margin: 0px 150px 0px 150px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blerb {
+    text-align: center;
+}
+
+.picture {
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
