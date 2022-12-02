@@ -8,20 +8,20 @@
     @model Submission
     <form action="process" method="post">
         <p class="mb-3">Name: </p>
-        <span asp-validation-for="Name"></span>
+        <span class="text-danger" asp-validation-for="Name"></span>
         <input class="form-control mb-3" placeholder="Your name" asp-for="Name">
         <p>Email: </p>
-        <span asp-validation-for="Email"></span>
+        <span class="text-danger" asp-validation-for="Email"></span>
         <input class="form-control mb-3" type="text" asp-for="Email">
-        <p class="mb-3"></p>
-        <span asp-validation-for="Birthday"></span>
-        <input class="mb-3" type="date" asp-for="Birthday">
+        <p class="mb-3">Birthday: </p>
+        <span class="text-danger" asp-validation-for="Birthday"></span>
+        <input class="form-control mb-3" type="date" asp-for="Birthday">
         <p>Password: </p>
-        <span asp-validation-for="Password"></span>
-        <input class="mb-3" type="password" asp-for="Password">
+        <span class="text-danger" asp-validation-for="Password"></span>
+        <input class="form-control mb-3" type="password" asp-for="Password">
         <p>Favorite Odd Number: </p>
-        <span asp-validation-for="OddNum"></span>
-        <input type="number" asp-for="OddNum">
+        <span class="text-danger" asp-validation-for="OddNum"></span>
+        <input class="form-control mb-3" type="number" asp-for="OddNum">
         <button class="btn btn-primary">Submit</button>
     </form>
 </div>
