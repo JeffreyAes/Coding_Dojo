@@ -23,12 +23,18 @@ public class HomeController : Controller
     [HttpPost("process")]
     public IActionResult process(Survey newData)
     {
+        if(ModelState.IsValid)    
+    {        
         data = newData;
-        return RedirectToAction("ShowResults");
+        return RedirectToAction("Results");
+    }
+    else{
+        return View("Index");
+    }
 
     }
-    [HttpGet("results")]
-    public ViewResult ShowResults()
+    [HttpGet("Results")]
+    public IActionResult Results()
     {
         
         return View("Results", data);

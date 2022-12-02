@@ -3,23 +3,30 @@
 }
 
 <div class="container mt-4">
-        <form action="/process" method="post">
+    @model Survey
+        <form action="process" method="post">
             <p class="mb-3">Your Name</p>
-            <input class="form-control mb-3" type="text" placeholder="Your name" name="Name">
+            <span asp-validation-for="Name"></span>
+            <input class="form-control mb-3" placeholder="Your name" asp-for="Name">
             <p class="mb-3">Your Location</p>
-            <select class="form-control mb-3" name="Location">
+            <span asp-validation-for="Location"></span>
+            <select class="form-control mb-3" asp-for="Location">
+                <option value="">choose</option>
                 <option value="seattle">Seattle</option>
                 <option value="tacoma">Tacoma</option>
                 <option value="redmond">Redmond</option>
             </select>
             <p class="mb-3 mb-3">Your Favorite Language</p>
-            <select class="form-control mb-3" name="Language">
+            <span asp-validation-for="Language"></span>
+            <select class="form-control mb-3" asp-for="Language">
+                <option value="">choose</option>
                 <option value="python">Python</option>
                 <option value="c#">c#</option>
                 <option value="java">java</option>
             </select>
             <p class="mb-3">Comment (optional)</p>
-            <textarea class="form-control mt-3" name="Comment" placeholder="Your comment" cols="30" rows="10"></textarea>
+            <span asp-validation-for="Comment"></span>
+            <textarea class="form-control mt-3" asp-for="Comment" placeholder="Your comment"></textarea>
             <button class="btn btn-primary mt-4">Submit</button>
         </form>
         
