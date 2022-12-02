@@ -23,6 +23,7 @@ public class HomeController : Controller
     [HttpPost("process")]
     public IActionResult Process(Submission newData)
     {
+        
         if(ModelState.IsValid)
         {
             return RedirectToAction("Success");

@@ -19,9 +19,14 @@
         <p>Password: </p>
         <span class="text-danger" asp-validation-for="Password"></span>
         <input class="form-control mb-3" type="password" asp-for="Password">
-        <p>Favorite Odd Number: </p>
+        <p>Favorite Prime Number: </p>
         <span class="text-danger" asp-validation-for="OddNum"></span>
-        <input class="form-control mb-3" type="number" asp-for="OddNum">
+        <input class="form-control mb-3" asp-for="OddNum" id="OddNum">
         <button class="btn btn-primary">Submit</button>
     </form>
 </div>
+<script>
+    var OddNum = document.getElementById("OddNum")
+    console.log(OddNum.value)
+    console.log("*************************************")
+</script>

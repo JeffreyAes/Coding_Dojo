@@ -13,13 +13,13 @@ public class Submission
 
     [Required(ErrorMessage = "Birthday is Required")]
     [PastDate]
-    public DateTime Birthday {get;set;}
+    public DateTime? Birthday {get;set;}
 
     [Required(ErrorMessage = "Password is Required")]
     [MinLength(8, ErrorMessage = "Password must be at least 8 characters")]
     public string Password {get;set;}
 
     [Required(ErrorMessage = "Odd number is Required")]
-    [MustBeOdd]
-    public int OddNum {get;set;}
+    [PrimeNumber]
+    public int? OddNum {get;set;}
 }
