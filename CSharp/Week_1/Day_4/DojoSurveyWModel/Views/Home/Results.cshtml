@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Your Results";
+    Layout = "_Layout";
+}
+
+<div class="container mt-4">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>Name: </th>
+                    <th>@Model.Name</th>
+                </tr>
+                <tr>
+                    <th>Location: </th>
+                    <th>@Model.Location</th>
+                </tr>
+                <tr>
+                    <th>Language: </th>
+                    <th>@Model.Language</th>
+                </tr>
+                <tr>
+                    <th>@Model.Comment</th>
+                    @{
+
+                    if(Model.Comment == null){
+                        <th>no comment... :/</th>
+                    }
+                    else{
+                    <th>@Model.Comment</th>
+                    }
+                    }
+                </tr>
+            </thead>
+        </table>
+        <a class="btn btn-primary" href="/">home</a>
+    </div>
