@@ -19,7 +19,7 @@ public class Submission
     [MinLength(8, ErrorMessage = "Password must be at least 8 characters")]
     public string Password {get;set;}
 
-    [Required(ErrorMessage = "Odd number is Required")]
+    [Required(ErrorMessage = "Prime number is Required")]
     [PrimeNumber]
     public int? OddNum {get;set;}
 }
