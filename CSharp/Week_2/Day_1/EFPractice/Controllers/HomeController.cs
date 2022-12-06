@@ -28,6 +28,25 @@ public class HomeController : Controller
         return View();    
     } 
 
+    [HttpPost("monsters/create")]
+public IActionResult CreateMonster(Monster newMon)
+{    
+    if(ModelState.IsValid)
+    {
+        // We can take the Monster object created from a form submission
+        // and pass the object through the .Add() method  
+        // Remember that _context is our database  
+        _context.Add(newMon);    
+        // OR _context.Monsters.Add(newMon); if we want to specify the table
+        // EF Core will be able to figure out which table you meant based on the model  
+        // VERY IMPORTANT: save your changes at the end! 
+        _context.SaveChanges();
+        return RedirectToAction("SomeAction");
+    } else {
+        // Handle unsuccessful validations
+    }
+}
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
