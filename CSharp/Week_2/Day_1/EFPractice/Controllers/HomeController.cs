@@ -44,6 +44,7 @@ public IActionResult CreateMonster(Monster newMon)
         return RedirectToAction("SomeAction");
     } else {
         // Handle unsuccessful validations
+        return RedirectToAction("Index");
     }
 }
 
