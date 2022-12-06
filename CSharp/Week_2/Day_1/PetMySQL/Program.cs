@@ -1,9 +1,23 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.EntityFrameworkCore;
+// You will need access to your models for your context file
+using PetMySQL.Models;
 
-// Add services to the container.
+var builder = WebApplication.CreateBuilder(args);
+// Add this using statement
+// Builder code from before
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
 builder.Services.AddControllersWithViews();
 
+// Add services to the container.
+builder.Services.AddDbContext<MyContext>(options =>
+// Create a variable to hold your connection string
+{
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+});
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
