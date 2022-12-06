@@ -18,6 +18,7 @@
 IEnumerable<Eruption> stratovolcanoEruptions = eruptions.Where(c => c.Type == "Stratovolcano");
 PrintEach(stratovolcanoEruptions, "Stratovolcano eruptions.");
 // Execute Assignment Tasks here!
+
 Eruption? FirstChile = eruptions.FirstOrDefault(e => e.Location == "Chile");
 System.Console.WriteLine($"first eruption in chile: {FirstChile}");
 
