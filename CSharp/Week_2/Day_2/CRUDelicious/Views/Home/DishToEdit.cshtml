@@ -1,9 +1,7 @@
-﻿@{
-    ViewData["Title"] = "Add a new Dish";
-}
-<h1>@ViewData["Title"]</h1>
+
 @model Dish
-<form asp-action="CreateDish" asp-controller="Home" method="post">
+<h1>@Model.Name</h1>
+<form asp-action="UpdateDish" asp-controller="Home" method="post" asp-route-dishId="@Model.DishId">
 
     <div class="mb-3">
         <p>Name of dish: </p>
@@ -18,7 +16,7 @@
     <div class="mb-3">
         <p>you like?: </p>
         <select asp-for="Tastiness" class="form-select">
-            <option selected disabled hidden>pick 1</option> 
+            <option selected disabled hidden>pick one</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -39,7 +37,7 @@
         <span asp-validation-for="Description"></span>
     </div>
     <div class="mb-3">
-        <button type="submit" class="btn btn-success">Add Dish</button>
+        <button type="submit" class="btn btn-success">Edit Dish</button>
         <a href="/" class="btn btn-primary">Home</a>
     </div>
 </form>

@@ -4,8 +4,13 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome to CRUDelcious</h1>
-    <h3>home | <a href="/dish/new">Add a dish</a></h3>
+    <h3>home | <a href="/dishes/new">Add a dish</a></h3>
     
 </div>
 
 <h5>Check out some recent dishes: </h5>
+@model List<Dish>
+        @foreach (Dish d in Model)
+        {
+        <p><a asp-action="ShowDish" asp-controller="Home" asp-route-dishId="@d.DishId">@d.Name</a> by @d.Chef</p>
+        }
