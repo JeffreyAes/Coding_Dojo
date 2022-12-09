@@ -1,0 +1,46 @@
+
+@model MyViewModel
+
+<form asp-action="CreateDishes" asp-controller="Home" method="post">
+        <div class="mb-3">
+            <label asp-for="@Model.Dish.Name"></label>
+            <input asp-for="@Model.Dish.Name" class="form-control">
+            <span class="text-danger" asp-validation-for="@Model.Dish.Name"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="@Model.Dish.Tastiness"></label>
+            <select asp-for="@Model.Dish.Tastiness" class="form-control">
+                <option hidden disabled selected>pick one</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <span class="text-danger" asp-validation-for="@Model.Dish.Tastiness"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="@Model.Dish.Calories"></label>
+            <input asp-for="@Model.Dish.Calories" class="form-control">
+            <span class="text-danger" asp-validation-for="@Model.Dish.Calories"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="@Model.Dish.ChefId">Chef</label>
+            <select class="form-select" asp-for="@Model.Dish.ChefId">
+
+            @foreach(Chef c in Model.AllChefs)
+            {
+            <option hidden disabled selected></option>
+            <option value="@c.ChefId">@c.FirstName @c.LastName</option>
+            }
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <input type="submit" class="btn btn-success">
+        </div>
+
+    </form>

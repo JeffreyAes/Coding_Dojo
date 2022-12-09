@@ -1,0 +1,26 @@
+@model KnownMove
+<form asp-action="CreateKnownMove" asp-controller="Home" method="post">
+    <div class="mb-3">
+        <label asp-for="PokemonId">Pokemon</label>
+        <select asp-for="PokemonId" class="form-select">
+            @foreach(Pokemon p in ViewBag.AllPokemon)
+            {
+                <option value="@p.PokemonId">@p.Name</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="MoveId">Moves</label>
+        <select asp-for="MoveId" class="form-select">
+            @foreach(Move p in ViewBag.AllMoves)
+            {
+                <option value="@p.MoveId">@p.Name</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <input type="submit" class="btn btn-success">
+    </div>
+</form>

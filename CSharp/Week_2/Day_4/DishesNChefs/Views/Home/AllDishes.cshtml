@@ -1,0 +1,19 @@
+<h1>Yum! Check out these tasty dishes</h1>
+@model MyViewModel
+<table class="table table-striped">
+    <tr>
+        <th>Name</th>
+        <th>Chef</th>
+        <th>Tastiness</th>
+        <th>Calories</th>
+    </tr>
+    @foreach (Dish d in Model.AllDishes)
+    {
+        <tr>
+            <td>@d.Name</td>
+            <td>@d.Creator.FirstName @d.Creator.LastName</td>
+            <td>@d.Tastiness</td>
+            <td>@d.Calories</td>
+        </tr>
+    }
+</table>

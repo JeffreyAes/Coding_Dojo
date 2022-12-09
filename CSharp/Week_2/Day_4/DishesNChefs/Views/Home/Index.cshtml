@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Check out these AWESOME Chefs!</h1>
+    @model MyViewModel
+    <table class="table table-striped">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th># of Dishes</th>
+        </tr>
+        @foreach (Chef c in Model.AllChefs)
+        {
+            <tr>
+                <td>@c.FirstName @c.LastName</td>
+                    @{
+                        var today = DateTime.Today;
+                        var birth = c.Birthday.Value;
+
+                        // Calculate the age.
+                        var age = today.Year - birth.Year;
+                        if (birth.Date > today.AddYears(-age)) age--;
+                    }
+                
+                
+                <td>@age</td>
+                <td>@c.AllDishes.Count</td>
+            </tr>
+        }
+    </table>
+
+</div>
