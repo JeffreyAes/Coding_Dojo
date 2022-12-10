@@ -13,6 +13,12 @@ html {
   min-height: 100%;
 }
 
+.gradient {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(40deg, rgb(9, 4, 106) 0%, rgba(19, 87, 195, 1) 35%, rgb(18, 174, 158) 100%);
+}
+
+
 body {
   margin-bottom: 60px;
 }
