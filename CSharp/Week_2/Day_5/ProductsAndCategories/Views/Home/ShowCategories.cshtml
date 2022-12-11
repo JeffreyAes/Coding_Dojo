@@ -1,0 +1,22 @@
+@model MyViewModel
+
+<div class="d-flex justify-content-around">
+    <div class="flex-1">
+        @await Html.PartialAsync("_Categories", Model.ViewCategory)
+
+        
+    </div>
+    <div class="flex-1">
+
+        <h1>All Categories</h1>
+        <ul>
+            @foreach (Category c in Model.AllViewCategory)
+            {
+                <a class="btn btn-warning" href="category/@c.CategoryId">
+                <li>@c.Name</li>
+                </a>
+            }
+        </ul>
+
+    </div>
+</div>

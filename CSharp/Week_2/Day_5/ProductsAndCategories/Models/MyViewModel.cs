@@ -3,10 +3,12 @@ using System.ComponentModel.DataAnnotations;
 namespace ProductsAndCategories.Models;
 public class MyViewModel
 {
-    public Product? ViewProduct {get;set;}
+    public Product ViewProduct {get;set;}
     public List<Product> AllViewProduct {get;set;}
     public Category ViewCategory {get;set;}
     public List<Category> AllViewCategory {get;set;}
+    public Association ViewAssociation {get;set;}
+    public List<Association> AllViewAssociation {get;set;}
     // good luck with this one
     // Terrance solved the algo today
 }

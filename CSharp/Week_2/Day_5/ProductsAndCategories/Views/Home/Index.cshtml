@@ -1,30 +1,24 @@
-﻿@model Product
+﻿@model MyViewModel
 @{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center d-flex ">
+<div class="d-flex justify-content-evenly">
     <div class="flex-1">
+        @await Html.PartialAsync("_Product", Model.ViewProduct)
 
-        <h1>New Products</h1>
-        <form asp-action="/" asp-controller="Home" method="post">
-            <label asp-for="Name"></label>
-            <input asp-for="Name" class="form-control">
-            <span class="text-danger" asp-validation-for="Name"></span>
-
-            <label asp-for="Description"></label>
-            <input asp-for="Description" class="form-control">
-            <span class="text-danger" asp-validation-for="Description"></span>
-
-            <label asp-for="Price"></label>
-            <input asp-for="Price" class="form-control">
-            <span class="text-danger" asp-validation-for="Price"></span>
-
-        </form>
+        
     </div>
     <div class="flex-1">
-        @await Html.PartialAsync("_Product")
+
+        <h1>All Products</h1>
+        <ul>
+            @foreach (Product p in Model.AllViewProduct)
+            {
+                <a href="product/@p.ProductId">
+                <li>@p.Name</li>
+                </a>
+            }
+        </ul>
 
     </div>
-
 </div>

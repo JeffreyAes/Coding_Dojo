@@ -1,0 +1,16 @@
+@model MyViewModel
+<h1 class="mt-3 text-center">@Model.ViewProduct.Name</h1>
+<div class="d-flex justify-content-between">
+    <div class="flex-1">
+        <ul>
+            @foreach(Association p in Model.AllViewAssociation)
+            {
+                <li>@p.Category.Name</li>
+            }
+        </ul>
+    </div>
+    <div class="flex-1">
+        @await Html.PartialAsync("_OneProdPlusCategories", Model.ViewAssociation)
+    </div>
+</div>
+
