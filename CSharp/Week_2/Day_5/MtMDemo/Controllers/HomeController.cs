@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MtMDemo.Models;
 
 namespace MtMDemo.Controllers;
@@ -45,7 +46,25 @@ public class HomeController : Controller
     }
 
     [HttpGet("pokemon/{id}")]
-    
+    public IActionResult OnePokemon(int id)
+    {
+        Pokemon? OnePoke = _context.Pokemon
+        .Include(a => a.MovesKnown)
+        .ThenInclude(s => s.Move)
+        .FirstOrDefault(a => a.PokemonId == id);
+        return View(OnePoke);
+    }
+
+
+    [HttpGet("move/{id}")]
+    public IActionResult OneMove(int id)
+    {
+        Move? OneMove = _context.Moves
+        .Include(a => a.PokemonWhoKnowMove)
+        .ThenInclude(s => s.Pokemon)
+        .FirstOrDefault(a => a.MoveId == id);
+        return View(OneMove);
+    }
 
     [HttpGet("moves")]
     public IActionResult Moves()
@@ -93,7 +112,7 @@ public class HomeController : Controller
         {
             _context.Add(newKnownMove);
             _context.SaveChanges();
-            return RedirectToAction("newMoveKNown");
+            return RedirectToAction("newMoveKnown");
         }
         else
         {

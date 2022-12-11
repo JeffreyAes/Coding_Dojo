@@ -1,0 +1,10 @@
+@model Move
+<h1>@Model.Name</h1>
+<h3>All Pokemon with this move</h3>
+<ul>
+    @foreach(KnownMove p in @Model.PokemonWhoKnowMove )
+    {
+        <li>@p.Pokemon.Name</li>
+    }
+</ul>
+
