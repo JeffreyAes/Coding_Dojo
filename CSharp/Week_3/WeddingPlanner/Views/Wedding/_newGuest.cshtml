@@ -1,0 +1,14 @@
+@model Guest
+@{
+    int userId = 0;
+    int? sessionUserId = Context.Session.GetInt32("UserId");
+    if (sessionUserId != null)
+    {
+        userId = (int)sessionUserId;
+    }
+}
+<form asp-action="AddGuest" asp-controller="Wedding" method="post">
+    <input type="hidden" value="@userId" asp-for="UserId">
+    <input type="hidden" value="@Model.WeddingId" asp-for="WeddingId">
+    <input type="submit" value="rsvp" class="btn btn-success btn-sm">
+</form>

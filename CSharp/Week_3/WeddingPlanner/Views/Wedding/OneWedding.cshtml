@@ -1,0 +1,22 @@
+@model Wedding
+
+<h1>@Model.WedderOne & @Model.WedderTwo's Wedding!</h1>
+
+
+@{
+    DateTime WeddingDate = (DateTime)Model.PlanDate;
+}
+<h4>@WeddingDate.ToString("MMM d, yyyy")</h4>
+
+<h4>Guest:</h4>
+<div class="card">
+    <div class="card-body">
+        <ul class="list-group">
+
+@foreach(Guest g in Model.Guests)
+{
+    <li class="list-group-item">@g.User.FirstName @g.User.LastName</li>
+}
+        </ul>
+    </div>
+</div>

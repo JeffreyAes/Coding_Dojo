@@ -1,0 +1,63 @@
+@model List<Wedding>
+@{
+    int userId = 0;
+    int? sessionUserId = Context.Session.GetInt32("UserId");
+    if (sessionUserId != null)
+    {
+        userId = (int)sessionUserId;
+    }
+}
+
+<h1>Welcome @Context.Session.GetString("Name")</h1>
+
+<table class="table table-striped">
+    <tr>
+        <th>Wedding of</th>
+        <th>Date</th>
+        <th>Guest Count</th>
+        <th>ACTION</th>
+    </tr>
+    @foreach (Wedding w in Model)
+    {
+        <tr>
+            <td> <a href="guests/weddings/@w.WeddingId">@w.WedderOne & @w.WedderTwo</a></td>
+
+            
+            @{
+                DateTime WeddingDate = (DateTime)w.PlanDate;
+            }
+            <td>@WeddingDate.ToString("MMM d, yyyy")</td>
+            <td>@w.Guests.Count</td>
+            <td>
+                @if (userId == w.UserId)
+                {
+                    <form asp-action="DeleteWedding" asp-controller="Wedding" asp-route-weddingId="@w.WeddingId" method="post">
+                        <input type="submit" value="Delete" class="btn btn-danger btn-sm">
+                    </form>
+                }
+                else
+                {
+                    if (w.Guests.Any(a => a.UserId == userId))
+                    {
+                        <form 
+                            asp-action="DeleteGuest" 
+                            asp-controller="Wedding" 
+                            asp-route-weddingId="@w.WeddingId"
+                            asp-route-userId="@userId" method="post">
+                            <input type="submit" value="Unrsvp" class="btn btn-danger btn-sm">
+                        </form>
+                    }
+                    else 
+                    {
+                        @* Instead of using view model, instantiate necessary model before the partial, and send it over :) *@
+                        @* pass whatever data is needed. *@
+                        Guest guest = new Guest();
+                        guest.WeddingId = w.WeddingId;
+                        @await Html.PartialAsync("_newGuest", guest);
+                    }
+
+                }
+            </td>
+        </tr>
+    }
+</table>
