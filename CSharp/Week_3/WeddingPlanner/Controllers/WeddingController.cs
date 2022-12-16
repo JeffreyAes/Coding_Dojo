@@ -22,7 +22,9 @@ public class WeddingController : Controller
     public IActionResult Weddings()
 
     {
-        List<Wedding> allWeddings = _context.Weddings.Include(a => a.Guests).ToList();
+        List<Wedding> allWeddings = _context.Weddings
+        .Include(a => a.Guests)
+        .ToList();
         
         return View("Weddings", allWeddings);
     }
@@ -99,7 +101,10 @@ public class WeddingController : Controller
     public IActionResult OneWedding(int weddingId)
     {
         // passing the model including related objects for using multiple models.
-        Wedding One = _context.Weddings.Include(w => w.Guests).ThenInclude(g => g.User).FirstOrDefault(w => w.WeddingId == weddingId);
+        Wedding One = _context.Weddings
+        .Include(w => w.Guests)
+        .ThenInclude(g => g.User)
+        .FirstOrDefault(w => w.WeddingId == weddingId);
         return View("OneWedding", One);
     }
 
