@@ -12,17 +12,19 @@ const App = () => {
     const [Email, setEmail] = useState("");
     const [Password, setPassword] = useState("");
     const [ConfirmPassword, setConfirmPassword] = useState("");
+    // instead we can make an object with key value pairs so theres only one variable 
+    // example user = {[firstName:"", lastName:"", ect]}
 
-
-    const handleNewUser = (e) => {
-      e.preventDefault();
-      const newUser = { FirstName, LastName, Email, Password, ConfirmPassword };
-      setFirstName(newUser.FirstName)
-      setLastName(newUser.LastName)
-      setEmail(newUser.Email)
-      setPassword(newUser.Password)
-      setConfirmPassword(newUser.ConfirmPassword)
-    };
+// old code for trying to lift state without knowing how to.
+    // const handleNewUser = (e) => {
+    //   e.preventDefault();
+    //   const newUser = { FirstName, LastName, Email, Password, ConfirmPassword };
+    //   setFirstName(newUser.FirstName)
+    //   setLastName(newUser.LastName)
+    //   setEmail(newUser.Email)
+    //   setPassword(newUser.Password)
+    //   setConfirmPassword(newUser.ConfirmPassword)
+    // };
 
     const formMessageFirst = () => {
       if( FirstName.length != 0 && FirstName.length < 2 ) {
@@ -50,7 +52,7 @@ const App = () => {
   };
 
   const formMessageConfirmPassword = () => {
-    if( Password.localeCompare(ConfirmPassword)) {
+    if( Password.localeCompare(ConfirmPassword) && ConfirmPassword.length > 0) {
   return "must be the same";
     }
   };
@@ -59,7 +61,7 @@ const App = () => {
   
   return (
     <div className="App">
-      <form className='form-control' onSubmit={(e) => {handleNewUser(e)}}>
+      <form className='form-control'>
         <div className='marginForm'>
           <label>First Name: </label>
           <input className='form-control' type="text" onChange={(e) => {setFirstName(e.target.value)}}/>
@@ -88,13 +90,9 @@ const App = () => {
                     <tr>
                       
                         <th className='padding'>Your First Name:</th>
-
                         <th className='padding'>Your Last Name:</th>
-
                         <th className='padding'>Your Email:</th>
-
                         <th className='padding'>Your Password (this is normal i swear): </th>
-
                         <th className='padding'>Your Confirm Password (incase you didn't get it the first time):</th>
                     </tr>
                 </thead>
