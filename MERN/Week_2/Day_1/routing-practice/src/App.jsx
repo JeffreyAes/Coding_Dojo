@@ -22,11 +22,11 @@ const Home = (props) => {
 
 const Four = (props) => {
   const { num } = useParams()
-  const navigate = useNavigate()
-  if (isNaN(num))
-  {
-    navigate(Hello(num))
-  }
+  // const navigate = useNavigate()
+  // if (isNaN(num))
+  // {
+  //   navigate(Hello(num))
+  // }
   return (
     <div style={{ textAlign: "center" }}>
       <h1 >The magic number is {num}</h1>
