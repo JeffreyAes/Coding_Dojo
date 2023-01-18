@@ -46,22 +46,6 @@ const Thing = (props) => {
   }
 }
 
-// const Word = (props) => {
-//   const { word } = useParams()
-//   const { color } = useParams()
-//   const { bgcolor } = useParams()
-//   return (
-
-//     <div style={{ textAlign: "center" }}>
-//       <div style={{ backgroundColor: bgcolor }}>
-//         <h1 style={{ color: color }}> the word is... {word} </h1>
-//       </div>
-//       <div>
-//         <p>try adding colors to the link. like hello/red/blue</p>
-//       </div>
-//     </div>
-//   )
-// }
 
 function App() {
 
@@ -80,7 +64,6 @@ function App() {
         <Route path="/:thing/:color/:bgcolor" element={<Thing />} />
         <Route path="/:thing/:color" element={<Thing />} />
         <Route path="/:thing" element={<Thing />} />
-        {/* <Route path="/:word" element={<Word />} /> */}
         <Route path="/" element={<Home />} />
       </Routes>
     </div>
