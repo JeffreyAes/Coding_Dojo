@@ -1,0 +1,139 @@
+Request 1.)
+https://pokeapi.co/api/v2/pokemon/weedle
+snip-it:
+
+{
+    "abilities": [
+        {
+            "ability": {
+                "name": "shield-dust",
+                "url": "https://pokeapi.co/api/v2/ability/19/"
+            },
+            "is_hidden": false,
+            "slot": 1
+        },
+        {
+            "ability": {
+                "name": "run-away",
+                "url": "https://pokeapi.co/api/v2/ability/50/"
+            },
+            "is_hidden": true,
+            "slot": 3
+        }
+    ],
+    "base_experience": 39,
+    "forms": [
+        {
+            "name": "weedle",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/13/"
+        }
+    ],
+
+Request 2.)
+https://pokeapi.co/api/v2/pokemon/charmander
+snip-it:
+
+{
+    "abilities": [
+        {
+            "ability": {
+                "name": "blaze",
+                "url": "https://pokeapi.co/api/v2/ability/66/"
+            },
+            "is_hidden": false,
+            "slot": 1
+        },
+        {
+            "ability": {
+                "name": "solar-power",
+                "url": "https://pokeapi.co/api/v2/ability/94/"
+            },
+            "is_hidden": true,
+            "slot": 3
+        }
+    ],
+    "base_experience": 62,
+    "forms": [
+        {
+            "name": "charmander",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/4/"
+        }
+    ],
+
+Request 3.)
+https://pokeapi.co/api/v2/pokemon/382
+snip-it:
+
+{
+    "abilities": [
+        {
+            "ability": {
+                "name": "guts",
+                "url": "https://pokeapi.co/api/v2/ability/62/"
+            },
+            "is_hidden": false,
+            "slot": 1
+        },
+        {
+            "ability": {
+                "name": "no-guard",
+                "url": "https://pokeapi.co/api/v2/ability/99/"
+            },
+            "is_hidden": false,
+            "slot": 2
+        },
+        {
+            "ability": {
+                "name": "steadfast",
+                "url": "https://pokeapi.co/api/v2/ability/80/"
+            },
+            "is_hidden": true,
+            "slot": 3
+        }
+    ],
+
+    Request 4.)
+    https://pokeapi.co/api/v2/pokemon/380
+
+snip-it:
+
+{
+    "abilities": [
+        {
+            "ability": {
+                "name": "levitate",
+                "url": "https://pokeapi.co/api/v2/ability/26/"
+            },
+            "is_hidden": false,
+            "slot": 1
+        }
+    ],
+    "base_experience": 300,
+    "forms": [
+        {
+            "name": "latias",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/380/"
+        }
+    ],
+
+Request 5.)
+snip-it:
+
+{
+    "abilities": [
+        {
+            "ability": {
+                "name": "magnet-pull",
+                "url": "https://pokeapi.co/api/v2/ability/42/"
+            },
+            "is_hidden": false,
+            "slot": 1
+        }
+    ],
+    "base_experience": 150,
+    "forms": [
+        {
+            "name": "meltan",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/808/"
+        }
+    ],
