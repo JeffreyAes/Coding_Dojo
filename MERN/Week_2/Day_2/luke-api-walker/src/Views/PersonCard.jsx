@@ -1,6 +1,4 @@
-import { useState } from "react";
 const PersonCard = (props) => {
-    const { handleSubmit } = props;
     const { information } = props;
     const { name, height, mass, hair_color, skin_color } = information
     return (

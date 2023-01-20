@@ -1,9 +1,6 @@
 import { useState } from "react";
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useParams } from "react-router-dom";
 import axios from "axios";
-import ErrorCard from "./ErrorCard";
 import PersonCard from "./PersonCard";
 import PlanetCard from "./PlanetCard";
 
@@ -25,9 +22,7 @@ const Wrapper = (props) => {
             if (error.response.status === 404) {
                 navigate("/error")
             }
-
         })
-
     }
 
     return (
@@ -43,17 +38,16 @@ const Wrapper = (props) => {
                 </form>
             </div>
             {
-                category == "people"?
-                <div>
-                    {<PersonCard information={information}></PersonCard>}
-                </div>:
-                <div>
-                    {<PlanetCard information = {information}/>}
-                </div>
+                category == "people" ?
+                    <div>
+                        {<PersonCard information={information}></PersonCard>}
+                    </div> :
+                    <div>
+                        {<PlanetCard information={information} />}
+                    </div>
             }
         </div>
     )
 }
-
 
 export default Wrapper;

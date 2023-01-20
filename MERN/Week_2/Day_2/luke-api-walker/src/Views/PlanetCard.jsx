@@ -1,4 +1,3 @@
-import { useState } from "react"
 const PlanetCard = (props) => {
     const { information } = props;
     const { name, climate, surface_water, population } = information
