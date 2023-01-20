@@ -10,15 +10,16 @@ import {
 } from "react-router-dom";
 import Wrapper from "./Views/Wrapper";
 import ErrorCard from "./Views/ErrorCard";
+import PersonCard from "./Views/PersonCard";
+import PlanetCard from "./Views/PlanetCard";
 
 function App() {
-  const [category, setCategory] = useState()
+  const [information, setInformation] = useState()
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Navigate to="/home" replace /> }/>
         <Route path="/home" replace element={<Wrapper/>}/>
-        <Route path="/home/:category/:id" element={<Wrapper />} />
         <Route path="*" element={<ErrorCard />} />
       </Routes>
     </div>
