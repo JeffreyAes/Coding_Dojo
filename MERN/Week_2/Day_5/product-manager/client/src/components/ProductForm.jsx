@@ -29,7 +29,7 @@ export default () => {
                 </div>
                 <div>
                     <label>Product price: </label>
-                    <input type="number" onChange={(e)=>setPrice(e.target.value)} />
+                    <input type="number" step=".01" onChange={(e)=>setPrice(e.target.value)} />
                 </div>
                 <div>
                     <label>Product description: </label>
