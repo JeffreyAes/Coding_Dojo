@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Main from './views/Main';
 import Detail from './views/Detail';
 import Update from './views/Update';
@@ -11,9 +11,10 @@ function App() {
   return (
     <div className="App">
       <Routes>
+        <Route element={<Navigate to="/products" replace />} path="/"  />
         <Route element={<Main products={products} setProducts={setProducts} loaded={loaded} setLoaded={setLoaded} />} path="/products/" />
-        <Route element={<Detail products={products} setProducts={setProducts} loaded={loaded} setLoaded={setLoaded}/>} path="/products/:id" />
-        <Route element={<Update/>} path="/products/:id/edit"/>
+        <Route element={<Detail products={products} setProducts={setProducts} loaded={loaded} setLoaded={setLoaded} />} path="/products/:id" />
+        <Route element={<Update />} path="/products/:id/edit" />
       </Routes>
     </div>
   );
