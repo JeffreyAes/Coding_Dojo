@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-
 import axios from 'axios';
 import PersonForm from '../components/PersonForm';
 import PersonList from '../components/PersonList';
@@ -17,13 +16,17 @@ const Main = (props) => {
             .catch(err => console.error(err));
     }, []);
 
+    const removeFromDom = personId => {
+        setPeople(people.filter(person => person._id != personId));
+    }
+
     return (
         <div>
             <PersonForm />
             <hr />
-            {loaded && <PersonList people={people} />}
+            {loaded && <PersonList people={people} removeFromDom={removeFromDom} />}
         </div>
-    )
+    );
 }
 
 export default Main;
