@@ -5,16 +5,7 @@ import ProductDelete from './ProductDelete';
 
 const ProductList = (props) => {
     const { removeFromDom } = props;
-    const navigate = useNavigate
 
-    // const deleteProduct = (productId) => {
-    //     axios.delete('http://localhost:8000/api/delete/' + productId)
-    //         .then(res => {
-    //             removeFromDom(productId)
-
-    //         })
-    //         .catch(err => console.log(err));
-    // }
     return (
         <div>
             {props.products.map((product, i) => 
@@ -26,7 +17,7 @@ const ProductList = (props) => {
                     </p>
                 </Link>
                     
-                    <ProductDelete product={product} products={props.products} setProducts={props.setProducts} loaded={props.loaded} setLoaded={props.setLoaded}/>
+                    <ProductDelete product={product}  setProducts={props.setProducts} loaded={props.loaded} setLoaded={props.setLoaded}/>
                     
                 </div>
             )}

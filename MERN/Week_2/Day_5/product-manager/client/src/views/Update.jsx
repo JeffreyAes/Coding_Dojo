@@ -16,10 +16,10 @@ const Update = (props) => {
                 setPrice(res.data.price);
                 setDescription(res.data.description)
             })
-    }, []);
+    }, [id]);
 
     const updateProduct = e => {
-        e.preventDefault();
+        // e.preventDefault();
         axios.put('http://localhost:8000/api/products/' + id, {
             title,
             price,
