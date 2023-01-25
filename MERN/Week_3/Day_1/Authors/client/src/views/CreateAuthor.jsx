@@ -16,10 +16,7 @@ const CreateAuthor = () => {
             name
         })
             .then(res => {
-                
-                if (errors.length === 0){
-                    navigate('/authors')
-                }   
+                navigate('/authors')
                 console.log(res)
             })
             // If successful, do something with the response. 

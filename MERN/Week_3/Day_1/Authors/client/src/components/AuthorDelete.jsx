@@ -9,13 +9,10 @@ const AuthorDelete = (props) => {
         
         axios.delete('http://localhost:8000/api/delete/' + authorId)
             .then(res => {
-                removeFromDom(authorId)
+                props.removeFromDom(authorId)
     
             })
             .catch(err => console.log(err));
-    }
-    const removeFromDom = authorId => {
-        props.setAuthors(props.authors.filter(author => author._id !== authorId));
     }
 
     return (

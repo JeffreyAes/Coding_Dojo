@@ -1,9 +1,8 @@
 import React from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import AuthorDelete from './AuthorDelete';
 
-const AuthorList = (props) => {
+const PlayerList = (props) => {
     return (
         <div>
 
@@ -14,16 +13,18 @@ const AuthorList = (props) => {
                     <table className='table  table-striped'>
                         <thead>
                             <tr>
-                                <th>Authors</th>
-                                <th>Actions available</th>
+                                <th>Team Name</th>
+                                <th>Prefered Position</th>
+                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
 
-                            {props.authors.map((author, i) =>
+                            {props.players.map((player, i) =>
                                 <tr key={i}>
-                                    <td >{author.name}</td>
-                                    <td><Link to={`/authors/${author._id}/edit`}>Edit</Link> <AuthorDelete authors={props.authors} authorId={author._id} setAuthors={props.setAuthors}  /> </td>
+                                    <td >{player.name}</td>
+                                    <td >{player.position}</td>
+                                    <td>Delete</td>
                                 </tr>
                             )}
                         </tbody>
@@ -34,4 +35,4 @@ const AuthorList = (props) => {
     )
 }
 
-export default AuthorList
+export default PlayerList

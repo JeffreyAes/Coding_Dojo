@@ -1,8 +1,8 @@
 import React from 'react';
-import Main from './views/Main';
 import CreateAuthor from './views/CreateAuthor';
 import Update from './views/AuthorsUpdate';
 import { Routes, Route, Navigate } from 'react-router-dom';
+import AuthorList from './views/AuthorList';
 function App() {
   return (
     <div className="App">
@@ -10,7 +10,7 @@ function App() {
 
       <Routes>
         <Route element={<Navigate to="/authors" replace />} path="/" />
-        <Route element={<Main />} path="/authors" />
+        <Route element={<AuthorList />} path="/authors" />
         <Route element={<CreateAuthor />} path="/authors/new" />
         <Route element ={<Update />} path="/authors/:id/edit" />
 
