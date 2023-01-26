@@ -11,7 +11,7 @@ module.exports.createPlayer = (request, response) => {
     const {name, position} = request.body;
     Player.create({
         name,
-        position
+        position,
     })
         .then(player => response.json(player))
         .catch(err => response.status(400).json(err))
