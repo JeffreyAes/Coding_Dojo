@@ -1,13 +1,20 @@
 import React from 'react'
 import axios from 'axios';
+import {useNavigate} from 'react-router-dom'
 
 const PlayerDelete = (props) => {
 
+    const navigate = useNavigate()
     const deletePlayer = (playerId) => {
         
         axios.delete('http://localhost:8000/api/delete/' + playerId)
             .then(res => {
-                props.removeFromDom(playerId)
+                if(props.removeFromDom){
+                    props.removeFromDom(playerId)
+                }
+                else{
+                    navigate('/players/list')
+                }
     
             })
             .catch(err => console.log(err));

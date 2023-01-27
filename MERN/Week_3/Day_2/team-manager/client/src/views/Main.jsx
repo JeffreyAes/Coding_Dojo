@@ -7,7 +7,8 @@ const PlayerList = (props) => {
     const [players, setPlayers] = useState([]);
     const [loaded, setLoaded] = useState(false);
     const removeFromDom = playerId => {
-        setPlayers(players.filter(player => player._id !== playerId));
+        setPlayers(players.filter(player => player._id !== playerId))
+        
     }
 
     useEffect(() => {
@@ -43,9 +44,9 @@ const PlayerList = (props) => {
                             {loaded && players.map((player, i)  =>
                                 
                                 <tr key={i}>
-                                    <td >{player.name}</td>
+                                    <td > <Link to={`/players/${player._id}`}>{player.name}</Link> </td>
                                     <td >{player.position}</td>
-                                    <td> <PlayerDelete playerId={player._id} removeFromDom={removeFromDom} /> </td>
+                                    <td> <Link className='btn btn-info' to={`/players/edit/${player._id}`} >Edit</Link> <PlayerDelete playerId={player._id} removeFromDom={removeFromDom} /> </td>
                                 </tr>
                             )}
                         </tbody>
