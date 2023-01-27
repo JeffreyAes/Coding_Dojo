@@ -13,11 +13,12 @@ const PlayerList = (props) => {
     useEffect(() => {
         axios.get('http://localhost:8000/api/players')
             .then(res => {
+                res.data.sort((a,b) => (a.name.toLowerCase() > b.name.toLowerCase()) ? 1 : -1);
                 setPlayers(res.data);
                 setLoaded(true);
             })
             .catch(err => console.error(err));
-    }, [players]);
+    }, []);
     return (
         <div>
 
@@ -39,7 +40,8 @@ const PlayerList = (props) => {
                         </thead>
                         <tbody>
 
-                            {loaded && players.map((player, i) =>
+                            {loaded && players.map((player, i)  =>
+                                
                                 <tr key={i}>
                                     <td >{player.name}</td>
                                     <td >{player.position}</td>

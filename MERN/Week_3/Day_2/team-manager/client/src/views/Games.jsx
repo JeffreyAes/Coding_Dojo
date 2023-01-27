@@ -11,6 +11,7 @@ const Games = (props) => {
     useEffect(() => {
         axios.get('http://localhost:8000/api/players')
             .then(res => {
+                res.data.sort((a,b) => (a.name.toLowerCase() > b.name.toLowerCase()) ? 1 : -1);
                 setAllPlayers(res.data);
                 setLoaded(true);
             })
