@@ -14,6 +14,7 @@ const Games = (props) => {
                 res.data.sort((a,b) => (a.name.toLowerCase() > b.name.toLowerCase()) ? 1 : -1);
                 setAllPlayers(res.data);
                 setLoaded(true);
+                console.log("meme")
             })
             .catch(err => console.error(err));
     }, [allPlayers]);
