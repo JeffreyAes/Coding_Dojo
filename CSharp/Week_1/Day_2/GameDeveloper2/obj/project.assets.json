@@ -8,26 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jeff\\.nuget\\packages\\": {}
+    "C:\\Users\\aesch\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jeff\\Desktop\\Coding_Dojo\\CSharp\\Week_1\\Day_2\\GameDeveloper2\\GameDeveloper2.csproj",
+      "projectUniqueName": "d:\\aesch\\OneDrive\\Desktop\\VsCodeFolder\\Coding_Dojo\\CSharp\\Week_1\\Day_2\\GameDeveloper2\\GameDeveloper2.csproj",
       "projectName": "GameDeveloper2",
-      "projectPath": "C:\\Users\\jeff\\Desktop\\Coding_Dojo\\CSharp\\Week_1\\Day_2\\GameDeveloper2\\GameDeveloper2.csproj",
-      "packagesPath": "C:\\Users\\jeff\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jeff\\Desktop\\Coding_Dojo\\CSharp\\Week_1\\Day_2\\GameDeveloper2\\obj\\",
+      "projectPath": "d:\\aesch\\OneDrive\\Desktop\\VsCodeFolder\\Coding_Dojo\\CSharp\\Week_1\\Day_2\\GameDeveloper2\\GameDeveloper2.csproj",
+      "packagesPath": "C:\\Users\\aesch\\.nuget\\packages\\",
+      "outputPath": "d:\\aesch\\OneDrive\\Desktop\\VsCodeFolder\\Coding_Dojo\\CSharp\\Week_1\\Day_2\\GameDeveloper2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jeff\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\aesch\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
